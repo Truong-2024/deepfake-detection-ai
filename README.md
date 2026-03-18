@@ -20,7 +20,7 @@ Dự án nghiên cứu và triển khai hệ thống phân loại ảnh thực (
 * **Visualization:** Matplotlib (Agg backend), XGrad-CAM.
 * **Frontend:** HTML5, CSS3, JavaScript (AJAX/Fetch API).
 ## Luồng xử lý chính
-![Luồng xử lý dữ liệu](screenshots/giaodien.png)
+![Luồng xử lý dữ liệu](screenshots/luongxuly.png)
 
 ## 🖼️ Demo & Kết quả thực nghiệm
 
