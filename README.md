@@ -39,7 +39,7 @@ Hệ thống sử dụng phương pháp giải thích mô hình (Explainable AI)
 
 ## 📁 Tài nguyên dự án (Project Resources)
 
-* **Model Weights:** [Tải file checkpoint_epoch_eff.pth tại đây]([LINK_DRIVE_CỦA_BẠN](https://drive.google.com/file/d/1jey48XBsVM5ETkW4nfVAw8evInzsTkKH/view?usp=drive_link))
+* **Model Weights:** [Tải file checkpoint_epoch_eff.pth tại đây](https://drive.google.com/file/d/1jey48XBsVM5ETkW4nfVAw8evInzsTkKH/view?usp=drive_link)
 
 ## 📁 Cấu trúc thư mục
 
