@@ -45,7 +45,7 @@ Hệ thống sử dụng phương pháp giải thích mô hình (Explainable AI)
 ### Hiệu suất phân loại đa lớp tập Val EfficientNet-B3
 ![Kết quả đa lớp Train](ketquathucnghiem/ValidationEfficientNet-B3.png)
 ### Hiệu suất phân loại đa lớp tập Test EfficientNet-B3
-![Kết quả đa lớp Train](ketquathucnghiem/ketquathucnghiem/TestValidation EfficientNet-B3.png)
+![Kết quả đa lớp Train](ketquathucnghiem/ketquathucnghiem/TestValidationEfficientNet-B3.png)
 
 ### Trực quan hóa tính năng và dấu vết số
 ## Đặc trưng PRNU
