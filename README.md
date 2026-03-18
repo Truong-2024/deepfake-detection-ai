@@ -72,6 +72,12 @@ Trong miền tần số, mỗi hình ảnh có thể được đặc trưng thô
 
 Phép biến đổi sóng con rời rạc (Discrete Wavelet Transform – DWT) cho phép phân tách ảnh thành các thành phần chi tiết ở nhiều thang tần khác nhau (multi-scale
 decomposition). Trong đó, bản đồ chi tiết (Wavelet Detail Map) biểu diễn năng lượng của các thành phần biên và texture trong ảnh. Đối với ảnh thật, năng lượng sóng con thường cao hơn do chứa nhiều chi tiết tự nhiên, cạnh sắc nét và nhiễu cảm biến vật lý.
+
+## Khả năng giải thích bằng XGrad-CAM
+
+
+
+
 ## 📁 Tài nguyên dự án (Project Resources)
 * **Model Weights:** [Tải file checkpoint_epoch_eff.pth tại đây](https://drive.google.com/file/d/1jey48XBsVM5ETkW4nfVAw8evInzsTkKH/view?usp=drive_link)
 
