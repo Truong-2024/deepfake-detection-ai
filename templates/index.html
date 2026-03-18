@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detector: Ảnh Thật hay Giả?</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Detector: Ảnh Thật hay Giả?</h1>
+        <p class="description">Tải lên một bức ảnh và chúng tôi sẽ phân tích liệu nó có phải được tạo bởi AI hay không, kèm theo giải thích chi tiết.</p>
+
+        <div class="upload-section" id="uploadSection">
+            <div class="drop-area" id="dropArea">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <p>Kéo & Thả ảnh vào đây hoặc <span class="browse-link">Chọn Ảnh</span></p>
+                <img id="imagePreview" src="#" alt="Xem trước ảnh" class="hidden">
+            </div>
+            <button id="analyzeButton" class="btn primary-btn" disabled>Phân tích ảnh</button>
+            <p class="error-message hidden" id="errorMessage"></p>
+        </div>
+
+        <div class="loading-section hidden" id="loadingSection">
+            <div class="spinner"></div>
+            <p>Đang phân tích, vui lòng chờ...</p>
+        </div>
+
+        <div class="results-section hidden" id="resultsSection">
+            <h2>Kết quả Phân tích</h2>
+            <div class="prediction-box">
+                <span id="overallPredictionText" class="prediction-real"></span>
+            </div>
+            <p class="confidence-text">Độ tin cậy cho dự đoán chính: <span id="mainConfidenceValue"></span></p>
+
+            <h3>Phân tích chi tiết theo phương pháp AI</h3>
+            <table class="confidence-table">
+                <thead>
+                    <tr>
+                        <th>Phương pháp</th>
+                        <th>Độ tin cậy</th>
+                    </tr>
+                </thead>
+                <tbody id="detailedConfidencesBody">
+                </tbody>
+            </table>
+
+            <div id="featuresSection" class="features-section hidden">
+                <h3>Phân tích đặc trưng (Giá trị)</h3>
+                <dl id="featuresList"></dl>
+            </div>
+
+            <!-- THÊM MỚI: Section cho hình ảnh trực quan features -->
+            <div id="featuresVisualization" class="features-vis-section hidden">
+                <h3>Trực quan hóa Đặc trưng</h3>
+                <p class="explanation-text">Hình ảnh minh họa cho từng đặc trưng được trích xuất, giúp chứng minh cơ sở dự đoán.</p>
+                <div class="image-results features-grid" id="featuresGrid">
+                    <!-- Dynamic: JS sẽ append .result-card cho từng feature -->
+                </div>
+            </div>
+
+            <!-- THÊM MỚI: Section cho Phân tích So sánh (từ analysis_summary) -->
+            <div id="analysisSummarySection" class="analysis-section hidden">
+                <h3>Phân tích So sánh với Ảnh Thật</h3>
+                <p id="explanationText" class="explanation-text"></p>
+                <ul id="fakeSignalsList"></ul>
+                <p class="confidence-text">Ước tính độ tin cậy dựa trên features: <span id="confidenceEstimateValue"></span></p>
+            </div>
+
+            <div class="image-results">
+                <div class="result-card">
+                    <h3>Ảnh Gốc</h3>
+                    <img id="originalImageResult" src="#" alt="Ảnh gốc">
+                </div>
+                <div class="result-card">
+                    <h3>Ảnh FFT</h3>
+                    <img id="fftImageResult" src="#" alt="Ảnh FFT">
+                </div>
+                <div class="result-card">
+                    <h3>Grad-CAM Spatial (trên Ảnh Gốc)</h3>
+                    <img id="gradCamSpatialImageResult" src="#" alt="Grad-CAM Spatial">
+                    <p class="explanation-text">Grad-CAM từ nhánh không gian trên ảnh gốc, hiển thị các vùng quan trọng.</p>
+                </div>
+                <div class="result-card">
+                    <h3>Grad-CAM Freq (trên Ảnh FFT)</h3>
+                    <img id="gradCamFreqImageResult" src="#" alt="Grad-CAM Freq">
+                    <p class="explanation-text">Grad-CAM từ nhánh tần số trên ảnh FFT để đưa ra dự đoán.</p>
+                </div>
+                <div class="result-card">
+                    <h3>Grad-CAM Fused (trên Ảnh Gốc)</h3>
+                    <img id="gradCamFusedImageResult" src="#" alt="Grad-CAM Fused">
+                    <p class="explanation-text">Grad-CAM tổng hợp từ cả hai nhánh trên ảnh gốc.</p>
+                </div>
+            </div>
+            <button id="analyzeAnotherButton" class="btn secondary-btn">Phân tích ảnh khác</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AI Detector. All rights reserved.</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
+
