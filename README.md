@@ -1,6 +1,6 @@
 # 🛡️ DeepFake & Synthetic Image Detection Web App
 
-Dự án nghiên cứu và triển khai hệ thống phân loại ảnh thực (Real) và ảnh giả lập (Fake) từ các mô hình AI (GANs, Diffusion Models). Ứng dụng kết hợp phân tích đa miền (Không gian & Tần số) và cung cấp khả năng giải thích mô hình thông qua XGrad-CAM.
+Dự án nghiên cứu và triển khai hệ thống phân loại ảnh thực (Real) và ảnh giả lập (Fake) từ các mô hình AI (GANs, Diffusion Models).Và nếu là ảnh giả sẽ nhận diện được do mô hình AI nào tạo ra. Ứng dụng kết hợp phân tích đa miền (Không gian & Tần số) và cung cấp khả năng giải thích mô hình thông qua XGrad-CAM.
 
 ## 🚀 Điểm nổi bật kỹ thuật (Technical Highlights)
 
