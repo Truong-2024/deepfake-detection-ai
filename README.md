@@ -30,14 +30,14 @@ Dự án nghiên cứu và triển khai hệ thống phân loại ảnh thực (
 ### Kết quả phân loại nguồn gốc
 Dựa trên kiến trúc Dual-Branch, mô hình có khả năng phân loại chính xác nguồn gốc ảnh từ nhiều cấu trúc AI khác nhau.
 ![Kết quả phân tích chi tiết](screenshots/phantichanhAI.png)
-### Để tăng tính giải thích, ứng dụng hiển thị các phân tích đặc trưng bổ sung dựatrên các chỉ số đã tính toán trong mô hình và ý nghĩa của từng đặc trưng, tùy thuộc vào quá trình phân loại và biết được do mô hình AI
+### Để tăng tính giải thích, ứng dụng hiển thị các phân tích đặc trưng bổ sung dựa trên các chỉ số đã tính toán trong mô hình và ý nghĩa của từng đặc trưng, tùy thuộc vào quá trình phân loại và biết được do mô hình AI
 ![Bằng chứng kết quả](screenshots/bangchung.png)
 ![Bằng chứng kết quả bản đồ trực quan](screenshots/bangchung2.png)
 ### Phân tích trực quan với XGrad-CAM
 Hệ thống sử dụng phương pháp giải thích mô hình (Explainable AI) để làm nổi bật các vùng đặc trưng giúp nhận diện ảnh giả lập.
 ![Kết quả Grad-CAM](screenshots/gradcam.png)
 
-## Kết quả thực nghiệm
+## 📊 Kết quả thực nghiệm
 ### Hiệu suất phân loại nhị phân của Dual-Stream EfficientNet-B3
 ![Kết quả nhị phân](ketquathucnghiem/NhiphanEfficientNet-B3.png)
 
