@@ -30,3 +30,23 @@ Dự án nghiên cứu và triển khai hệ thống phân loại ảnh thực (
 ├── app.py             # File khởi chạy Flask server
 ├── Procfile           # Cấu hình cho deployment (Heroku/Render)
 └── requirements.txt   # Danh sách thư viện cần thiết
+
+## 🖼️ Demo & Kết quả thực nghiệm
+
+### Giao diện hệ thống
+Ứng dụng Web cho phép người dùng tải lên hình ảnh và nhận kết quả phân tích thời gian thực.
+![Giao diện chính](screenshots/giaodien.png)
+![tải ảnh lên](screenshots/taianh.png)
+![Kết quả phân tích](screenshots/phantich.png)
+### Kết quả phân loại nguồn gốc
+Dựa trên kiến trúc Dual-Branch, mô hình có khả năng phân loại chính xác nguồn gốc ảnh từ nhiều cấu trúc AI khác nhau.
+![Kết quả phân tích chi tiết](screenshots/phantichanhAI.png)
+### Để tăng tính giải thích, ứng dụng hiển thị các phân tích đặc trưng bổ sung dựatrên các chỉ số đã tính toán trong mô hình và ý nghĩa của từng đặc trưng, tùy thuộc vào quá trình phân loại và biết được do mô hình AI
+![Bằng chứng kết quả](screenshots/bangchung.png)
+![Bằng chứng kết quả bản đồ trực quan](screenshots/bangchung2.png)
+### Phân tích trực quan với XGrad-CAM
+Hệ thống sử dụng phương pháp giải thích mô hình (Explainable AI) để làm nổi bật các vùng đặc trưng giúp nhận diện ảnh giả lập.
+![Kết quả Grad-CAM](screenshots/gradcam.png)
+
+
+
