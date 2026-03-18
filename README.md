@@ -75,8 +75,14 @@ decomposition). Trong đó, bản đồ chi tiết (Wavelet Detail Map) biểu d
 
 ## Khả năng giải thích bằng XGrad-CAM
 
+Ảnh StyleGAN1 với lớp phủ nhiệt XGrad-CAM
+![Kết quả Grad-CAM](screenshots/gradcam1.png)
 
+Ảnh Stable Diffusion với lớp phủ nhiệt XGrad-CAM
+![Kết quả Grad-CAM](screenshots/gradcam2.png)
 
+Ảnh Real với lớp phủ nhiệt XGrad-CAMẢnh StyleGAN1 với lớp phủ nhiệt XGrad-CAM
+![Kết quả Grad-CAM](screenshots/gradcam3.png)
 
 ## 📁 Tài nguyên dự án (Project Resources)
 * **Model Weights:** [Tải file checkpoint_epoch_eff.pth tại đây](https://drive.google.com/file/d/1jey48XBsVM5ETkW4nfVAw8evInzsTkKH/view?usp=drive_link)
